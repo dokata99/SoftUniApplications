@@ -74,8 +74,15 @@ export function setupNavigation(){
         }
     })
 
-    let createLink = document.getElementById('createLink')
     if(createLink != null){
+        let createLink = document.getElementById('createLink')
+        createLink.addEventListener('click', (e) =>{
+            e.preventDefault()
+            showCreate()
+        })
+
+    }
+    /* if(createLink != null){
         
         const userId = sessionStorage.getItem('userId')
         if(userId == null){
@@ -87,7 +94,7 @@ export function setupNavigation(){
                 showCreate()
             })
         }
-    }
+    } */
     
 }
 

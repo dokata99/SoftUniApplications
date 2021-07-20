@@ -92,3 +92,7 @@ form input[type="submit"]{
     border: none;
     padding: 0.5%;
 }
+
+.hidden{
+    display: none;
+}

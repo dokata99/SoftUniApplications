@@ -40,3 +40,6 @@ ul li {
 .status p {
     padding: 1rem;
 }
+.hidden{
+    display: none;
+}

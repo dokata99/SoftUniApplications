@@ -56,7 +56,9 @@ export async function registerPage(context) {
         }
         
         await register(email, password)
-    
+        
+        context.setUserNav()
+
         context.page.redirect('/')
         
     }

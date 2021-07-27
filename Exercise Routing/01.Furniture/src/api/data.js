@@ -28,10 +28,10 @@ export async function createItem(data){
 }
 
 
-export async function editItem(id, data){
+export async function editItemById(id, data){
     return await api.put(host + '/data/catalog/' + id, data)
 }
 
 export async function deleteItem(id){
-    return await api.del(host + '/data/catalog' + id)
+    return await api.del(host + '/data/catalog/' + id)
 }

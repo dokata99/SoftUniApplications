@@ -4,7 +4,7 @@ import { getAll } from './../api/data.js'
 const memesTemplate = (memes) => html`
 <section id="meme-feed">
     <h1>All Memes</h1>
-    <div id="memes"> -->
+    <div id="memes">
         ${memes ? memes.map(meme => memeCart(meme)) : html`<p class="no-memes">No memes in database.</p>`}
     </div>
 </section>`
@@ -23,7 +23,7 @@ const memeCart = (meme) => html`
 </div>`
 
 export async function memesPage(context) {
-
+    
     const memes = await getAll()
 
     context.render(memesTemplate(memes))
